@@ -260,10 +260,15 @@ box-shadow:0 4px 10px rgba(0,0,0,0.1);
 </div>
 
 </div>
+.profile{
+display:flex;
+align-items:center;
+gap:20px;
+}
+
 .foto{
-width:100px !important;
-height:100px !important;
+width:100px;
+height:100px;
 border-radius:50%;
 object-fit:cover;
-display:block;
 }
