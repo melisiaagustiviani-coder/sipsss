@@ -155,5 +155,35 @@
 
 </div>
 
+  <script>
+
+const bulanBelum = [
+"Juli",
+"Agustus",
+"September",
+"Oktober",
+"November",
+"Desember"
+];
+
+bulanBelum.forEach(function(bulan){
+
+if(localStorage.getItem(bulan)=="lunas"){
+
+document.body.innerHTML =
+document.body.innerHTML.replace(
+`<td>${bulan}</td>
+<td><span class="badge belum">Belum Bayar</span></td>
+<td><a href="bayar.html?bulan=${bulan}"><button class="btn-bayar">Bayar</button></a></td>`,
+`<td>${bulan}</td>
+<td><span class="badge lunas">Lunas</span></td>
+<td>-</td>`
+);
+
+}
+
+});
+
+</script>
 </body>
 </html>
