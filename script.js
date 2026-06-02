@@ -8,8 +8,8 @@ document.getElementById("username").value;
 let password =
 document.getElementById("password").value;
 
-if(username === "admin" &&
-password === "admin123"){
+if(username === "Meldra" &&
+password === "melisiadara1"){
 
 document.getElementById("loginPage")
 .style.display = "none";
