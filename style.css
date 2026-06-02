@@ -255,3 +255,10 @@ box-shadow:0 4px 10px rgba(0,0,0,0.1);
 </div>
 
 </div>
+.foto{
+width:100px !important;
+height:100px !important;
+border-radius:50%;
+object-fit:cover;
+display:block;
+}
