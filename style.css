@@ -1,8 +1,7 @@
 body{
-background:#eef5f1;
-font-family:Arial,sans-serif;
 margin:0;
-padding:0;
+font-family:Arial, sans-serif;
+background:#eef5ef;
 }
 
 .sidebar{
@@ -13,24 +12,24 @@ width:250px;
 height:100%;
 background:#1f4d36;
 padding-top:20px;
-color:white;
 }
 
 .sidebar h2{
+color:white;
 text-align:center;
 margin-bottom:40px;
 }
 
 .sidebar a{
 display:block;
-padding:15px 25px;
 color:white;
+padding:15px 25px;
 text-decoration:none;
 font-size:18px;
 }
 
 .sidebar a:hover{
-background:#2d6b4b;
+background:#2f6b4e;
 }
 
 .main{
@@ -40,10 +39,10 @@ padding:20px;
 
 .card-box{
 background:white;
-padding:20px;
+padding:25px;
 border-radius:20px;
-box-shadow:0 4px 10px rgba(0,0,0,0.1);
 margin-bottom:20px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
 
 .profile{
@@ -52,15 +51,21 @@ align-items:center;
 gap:20px;
 }
 
-.profile img{
-width:100px !important;
-height:100px !important;
-min-width:100px !important;
-min-height:100px !important;
-max-height:100px !important;
-border-radius:50% !important;
-object-fit:cover !important;
-display:block;
+.foto{
+width:100px;
+height:100px;
+border-radius:50%;
+object-fit:cover;
+}
+
+.text-profile h2{
+margin:0;
+font-size:40px;
+}
+
+.text-profile p{
+font-size:20px;
+color:#555;
 }
 
 .progress{
@@ -69,14 +74,15 @@ height:30px;
 background:#ddd;
 border-radius:20px;
 overflow:hidden;
+margin-top:20px;
 }
 
 .progress-bar{
-height:100%;
 width:50%;
-background:#2d8a55;
-color:white;
+height:100%;
+background:#1f7a3f;
 text-align:center;
+color:white;
 line-height:30px;
 font-weight:bold;
 }
@@ -89,34 +95,30 @@ margin-top:20px;
 
 .status-box{
 flex:1;
-padding:20px;
+padding:25px;
 border-radius:20px;
 color:white;
-font-size:28px;
-font-weight:bold;
 }
 
-.green{
-background:#2d8a55;
+.bayar{
+background:#1f7a3f;
 }
 
-.red{
-background:#c0392b;
+.belum{
+background:#b82f2f;
 }
 
 table{
 width:100%;
 border-collapse:collapse;
 margin-top:20px;
-background:white;
-border-radius:20px;
-overflow:hidden;
 }
 
 table th,
 table td{
 padding:15px;
 border-bottom:1px solid #ddd;
+text-align:left;
 }
 
 .badge{
@@ -127,11 +129,11 @@ font-size:14px;
 }
 
 .lunas{
-background:#2d8a55;
+background:green;
 }
 
-.belum{
-background:#c0392b;
+.belum-badge{
+background:red;
 }
 
 @media(max-width:768px){
@@ -150,158 +152,9 @@ margin-left:0;
 flex-direction:column;
 }
 
-}
-h2,h3{
-color:#1f2d3d;
-}
-
-.sidebar{
-box-shadow:4px 0 10px rgba(0,0,0,0.2);
-}
-
-.card-box{
-transition:0.3s;
-}
-
-.card-box:hover{
-transform:translateY(-3px);
-}
-
-.status-box{
-box-shadow:0 4px 10px rgba(0,0,0,0.1);
-}
-
-table{
-box-shadow:0 4px 10px rgba(0,0,0,0.1);
-}
-<div class="main">
-
-<div class="top-grid">
-
-<div class="card-box profile-card">
-
-<img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
-
-<h2>meldra</h2>
-
-<p>Rumah : A6</p>
-
-</div>
-
-<div class="card-box">
-
-<h2>Progress Pembayaran</h2>
-
-<div class="progress">
-
-<div class="progress-bar">
-50%
-</div>
-
-</div>
-
-<div class="status-container">
-
-<div class="status-box green">
-
-<h3>Sudah Dibayar</h3>
-
-<p>6 Bulan</p>
-
-</div>
-
-<div class="status-box red">
-
-<h3>Belum Dibayar</h3>
-
-<p>6 Bulan</p>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="card-box">
-
-<h2>Status Pembayaran</h2>
-
-<table>
-
-<tr>
-<th>Bulan</th>
-<th>Status</th>
-<th>Aksi</th>
-</tr>
-
-<tr>
-<td>Januari</td>
-<td><span class="badge lunas">Lunas</span></td>
-<td>-</td>
-</tr>
-
-<tr>
-<td>Februari</td>
-<td><span class="badge lunas">Lunas</span></td>
-<td>-</td>
-</tr>
-
-<tr>
-<td>Maret</td>
-<td><span class="badge lunas">Lunas</span></td>
-<td>-</td>
-</tr>
-
-</table>
-
-</div>
-
-</div>
-.profile-card{
-overflow:hidden;
-}
-
-.foto{
-width:100px !important;
-height:100px !important;
-max-width:100px !important;
-max-height:100px !important;
-border-radius:50%;
-object-fit:cover;
-display:block;
-}
-img{
-max-width:none !important;
-}
-
 .profile{
-display:flex;
-align-items:center;
-gap:20px;
+flex-direction:column;
+text-align:center;
 }
 
-.profile-card{
-overflow:hidden;
-padding:20px;
-}
-
-.foto{
-width:100px;
-height:100px;
-border-radius:50%;
-object-fit:cover;
-flex-shrink:0;
-}
-
-.text-profile h2{
-font-size:40px;
-margin:0;
-}
-
-.text-profile p{
-font-size:20px;
-color:#555;
-margin-top:10px;
 }
