@@ -286,3 +286,12 @@ font-weight:bold;
 .btn-bayar:hover{
 background:#0056cc;
 }
+.btn-bayar{
+background:#1e88ff;
+color:white;
+border:none;
+padding:8px 15px;
+border-radius:8px;
+cursor:pointer;
+font-weight:bold;
+}
