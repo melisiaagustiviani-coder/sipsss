@@ -67,12 +67,12 @@ object-fit:cover;
 }
 
 .text-profile h2{
-font-size:50px;
+font-size:28px;
 margin:0;
 }
 
 .text-profile p{
-font-size:25px;
+font-size:18px;
 margin-top:10px;
 color:#555;
 }
@@ -119,7 +119,7 @@ background:#b71c1c;
 }
 
 .status-box h3{
-font-size:30px;
+font-size:18px;
 margin:0;
 }
 
@@ -129,14 +129,14 @@ margin-top:15px;
 }
 
 .table-box h2{
-font-size:45px;
+font-size:20px;
 margin-bottom:20px;
 }
 
 table{
 width:100%;
 border-collapse:collapse;
-font-size:25px;
+font-size:18px;
 }
 
 th{
