@@ -35,8 +35,8 @@ background:rgba(255,255,255,0.1);
 }
 
 .main{
-margin-left:270px;
-padding:25px;
+margin-left:260px;
+padding:18px;
 }
 
 .top-grid{
@@ -49,7 +49,7 @@ margin-bottom:20px;
 .card-box{
 background:white;
 border-radius:25px;
-padding:25px;
+padding:18px;
 box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
 
@@ -60,14 +60,14 @@ gap:20px;
 }
 
 .foto{
-width:120px;
-height:120px;
+width:90px;
+height:90px;
 border-radius:50%;
 object-fit:cover;
 }
 
 .text-profile h2{
-font-size:28px;
+font-size:22px;
 margin:0;
 }
 
@@ -119,12 +119,12 @@ background:#b71c1c;
 }
 
 .status-box h3{
-font-size:18px;
+font-size:16px;
 margin:0;
 }
 
 .status-box h1{
-font-size:55px;
+font-size:22px;
 margin-top:15px;
 }
 
@@ -136,7 +136,7 @@ margin-bottom:20px;
 table{
 width:100%;
 border-collapse:collapse;
-font-size:18px;
+font-size:15px;
 }
 
 th{
