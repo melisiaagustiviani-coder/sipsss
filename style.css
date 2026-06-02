@@ -169,3 +169,88 @@ box-shadow:0 4px 10px rgba(0,0,0,0.1);
 table{
 box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
+<div class="main">
+
+<div class="top-grid">
+
+<div class="card-box profile-card">
+
+<img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+
+<h2>meldra</h2>
+
+<p>Rumah : A6</p>
+
+</div>
+
+<div class="card-box">
+
+<h2>Progress Pembayaran</h2>
+
+<div class="progress">
+
+<div class="progress-bar">
+50%
+</div>
+
+</div>
+
+<div class="status-container">
+
+<div class="status-box green">
+
+<h3>Sudah Dibayar</h3>
+
+<p>6 Bulan</p>
+
+</div>
+
+<div class="status-box red">
+
+<h3>Belum Dibayar</h3>
+
+<p>6 Bulan</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="card-box">
+
+<h2>Status Pembayaran</h2>
+
+<table>
+
+<tr>
+<th>Bulan</th>
+<th>Status</th>
+<th>Aksi</th>
+</tr>
+
+<tr>
+<td>Januari</td>
+<td><span class="badge lunas">Lunas</span></td>
+<td>-</td>
+</tr>
+
+<tr>
+<td>Februari</td>
+<td><span class="badge lunas">Lunas</span></td>
+<td>-</td>
+</tr>
+
+<tr>
+<td>Maret</td>
+<td><span class="badge lunas">Lunas</span></td>
+<td>-</td>
+</tr>
+
+</table>
+
+</div>
+
+</div>
