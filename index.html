@@ -116,38 +116,74 @@
 
 <tr>
 <td>Juli</td>
-<td><span class="badge belum">Belum Bayar</span></td>
-<td><a href="bayar.html?bulan=Juli"><button class="btn-bayar">Bayar</button></a></td>
+<td id="status-juli">
+<span class="badge belum">Belum Bayar</span>
+</td>
+<td id="aksi-juli">
+<a href="bayar.html?bulan=Juli">
+<button class="btn-bayar">Bayar</button>
+</a>
+</td>
 </tr>
 
 <tr>
 <td>Agustus</td>
-<td><span class="badge belum">Belum Bayar</span></td>
-<td><a href="bayar.html?bulan=Agustus"><button class="btn-bayar">Bayar</button></a></td>
+<td id="status-agustus">
+<span class="badge belum">Belum Bayar</span>
+</td>
+<td id="aksi-agustus">
+<a href="bayar.html?bulan=Agustus">
+<button class="btn-bayar">Bayar</button>
+</a>
+</td>
 </tr>
 
 <tr>
 <td>September</td>
-<td><span class="badge belum">Belum Bayar</span></td>
-<td><a href="bayar.html?bulan=September"><button class="btn-bayar">Bayar</button></a></td>
+<td id="status-september">
+<span class="badge belum">Belum Bayar</span>
+</td>
+<td id="aksi-september">
+<a href="bayar.html?bulan=September">
+<button class="btn-bayar">Bayar</button>
+</a>
+</td>
 </tr>
 
 <tr>
 <td>Oktober</td>
-<td><span class="badge belum">Belum Bayar</span></td>
-<td><a href="bayar.html?bulan=Oktober"><button class="btn-bayar">Bayar</button></a></td>
+<td id="status-oktober">
+<span class="badge belum">Belum Bayar</span>
+</td>
+<td id="aksi-oktober">
+<a href="bayar.html?bulan=Oktober">
+<button class="btn-bayar">Bayar</button>
+</a>
+</td>
 </tr>
 
 <tr>
 <td>November</td>
-<td><span class="badge belum">Belum Bayar</span></td>
-<td><a href="bayar.html?bulan=November"><button class="btn-bayar">Bayar</button></a></td>
+<td id="status-november">
+<span class="badge belum">Belum Bayar</span>
+</td>
+<td id="aksi-november">
+<a href="bayar.html?bulan=November">
+<button class="btn-bayar">Bayar</button>
+</a>
+</td>
 </tr>
 
 <tr>
 <td>Desember</td>
-<td><span class="badge belum">Belum Bayar</span></td>
-<td><a href="bayar.html?bulan=Desember"><button class="btn-bayar">Bayar</button></a></td>
+<td id="status-desember">
+<span class="badge belum">Belum Bayar</span>
+</td>
+<td id="aksi-desember">
+<a href="bayar.html?bulan=Desember">
+<button class="btn-bayar">Bayar</button>
+</a>
+</td>
 </tr>
 
 </table>
@@ -179,6 +215,32 @@ document.body.innerHTML.replace(
 <td><span class="badge lunas">Lunas</span></td>
 <td>-</td>`
 );
+
+}
+
+});
+
+</script>
+  <script>
+
+const bulan = [
+"juli",
+"agustus",
+"september",
+"oktober",
+"november",
+"desember"
+];
+
+bulan.forEach(function(item){
+
+if(localStorage.getItem(item)=="lunas"){
+
+document.getElementById("status-"+item).innerHTML =
+'<span class="badge lunas">Lunas</span>';
+
+document.getElementById("aksi-"+item).innerHTML =
+'-';
 
 }
 
