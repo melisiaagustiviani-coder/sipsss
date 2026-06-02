@@ -56,7 +56,6 @@ gap:20px;
 width:100px !important;
 height:100px !important;
 min-width:100px !important;
-max-width:100px !important;
 min-height:100px !important;
 max-height:100px !important;
 border-radius:50% !important;
@@ -260,15 +259,16 @@ box-shadow:0 4px 10px rgba(0,0,0,0.1);
 </div>
 
 </div>
-.profile{
-display:flex;
-align-items:center;
-gap:20px;
+.profile-card{
+overflow:hidden;
 }
 
 .foto{
-width:100px;
-height:100px;
+width:100px !important;
+height:100px !important;
+max-width:100px !important;
+max-height:100px !important;
 border-radius:50%;
 object-fit:cover;
+display:block;
 }
