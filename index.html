@@ -247,5 +247,36 @@ document.getElementById("aksi-"+item).innerHTML =
 });
 
 </script>
+  <script>
+
+window.onload = function(){
+
+const bulan = [
+"juli",
+"agustus",
+"september",
+"oktober",
+"november",
+"desember"
+];
+
+bulan.forEach(function(item){
+
+let status = localStorage.getItem("status_"+item);
+
+if(status=="lunas"){
+
+document.getElementById("status-"+item).innerHTML =
+'<span class="badge lunas">Lunas</span>';
+
+document.getElementById("aksi-"+item).innerHTML = "-";
+
+}
+
+});
+
+}
+
+</script>
 </body>
 </html>
