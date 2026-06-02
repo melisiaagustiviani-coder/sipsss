@@ -3,13 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>SIPS Dashboard</title>
+<title>SIPS Modern</title>
 
 <link rel="stylesheet" href="style.css">
 
 </head>
-
 <body>
 
 <div class="sidebar">
@@ -20,98 +18,11 @@
 <a href="#">👤 Profil</a>
 <a href="#">💰 Pembayaran</a>
 <a href="#">📢 Pengaduan</a>
-<a href="#" onclick="logout()">🚪 Logout</a>
+<a href="#">🚪 Logout</a>
 
 </div>
 
 <div class="main">
-
-<div class="top-grid">
-
-<div class="profile">
-
-<img class="foto" src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
-
-<div>
-<h2>meldra</h2>
-<p>Rumah : A6</p>
-</div>
-
-</div>
-
-<div class="card-box">
-
-<h2>Progress Pembayaran</h2>
-
-<div class="progress">
-
-<div class="progress-bar">
-50%
-</div>
-
-</div>
-
-<div class="status-container">
-
-<div class="status-box green">
-
-<h3>Sudah Dibayar</h3>
-
-<p>6 Bulan</p>
-
-</div>
-
-<div class="status-box red">
-
-<h3>Belum Dibayar</h3>
-
-<p>6 Bulan</p>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="card-box">
-
-<h2>Status Pembayaran</h2>
-
-<table>
-
-<tr>
-<th>Bulan</th>
-<th>Status</th>
-<th>Aksi</th>
-</tr>
-
-<tr>
-<td>Januari</td>
-<td><span class="badge lunas">Lunas</span></td>
-<td>-</td>
-</tr>
-
-<tr>
-<td>Februari</td>
-<td><span class="badge lunas">Lunas</span></td>
-<td>-</td>
-</tr>
-
-<tr>
-<td>Maret</td>
-<td><span class="badge lunas">Lunas</span></td>
-<td>-</td>
-</tr>
-
-</table>
-
-</div>
-
-</div>
-
-<div class="top-grid">
 
 <div class="card-box profile-card">
 
@@ -133,66 +44,20 @@
 <h2>Progress Pembayaran</h2>
 
 <div class="progress">
-
-<div class="progress-bar">
-50%
-</div>
-
+<div class="progress-bar">50%</div>
 </div>
 
 <div class="status-container">
 
-<div class="status-box green">
-
-<h3>Sudah Dibayar</h3>
-
-<p>6 Bulan</p>
-
-</div>
-
-<div class="status-box red">
-
-<h3>Belum Dibayar</h3>
-
-<p>6 Bulan</p>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="card-box">
-
-<h3>Progress Pembayaran</h3>
-
-<div class="progress">
-
-<div class="progress-bar">
-50%
-</div>
-
-</div>
-
-</div>
-
-<div class="status-container">
-
-<div class="status-box green">
-
-Rp 150.000
-
+<div class="status-box bayar">
+<h1>Rp 150.000</h1>
 <p>Total Bayar</p>
-
 </div>
 
-<div class="status-box red">
-
-Belum Lunas
-
+<div class="status-box belum">
+<h1>Belum Lunas</h1>
 <p>Status</p>
+</div>
 
 </div>
 
@@ -200,51 +65,28 @@ Belum Lunas
 
 <div class="card-box">
 
-<h3>Riwayat Pembayaran</h3>
+<h2>Riwayat Pembayaran</h2>
 
 <table>
 
 <tr>
-
 <th>Bulan</th>
 <th>Status</th>
-
 </tr>
 
 <tr>
-
 <td>Januari</td>
-
-<td>
-<span class="badge lunas">
-Lunas
-</span>
-</td>
-
+<td><span class="badge lunas">Lunas</span></td>
 </tr>
 
 <tr>
-
 <td>Februari</td>
-
-<td>
-<span class="badge belum">
-Belum
-</span>
-</td>
-
+<td><span class="badge belum-badge">Belum</span></td>
 </tr>
 
 <tr>
-
 <td>Maret</td>
-
-<td>
-<span class="badge lunas">
-Lunas
-</span>
-</td>
-
+<td><span class="badge lunas">Lunas</span></td>
 </tr>
 
 </table>
@@ -252,8 +94,6 @@ Lunas
 </div>
 
 </div>
-
-<script src="script.js"></script>
 
 </body>
 </html>
