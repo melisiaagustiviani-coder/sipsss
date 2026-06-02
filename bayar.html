@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pembayaran</title>
+
+<style>
+body{
+font-family:Arial;
+background:#eef5df;
+padding:30px;
+}
+
+.box{
+background:white;
+padding:30px;
+border-radius:20px;
+max-width:700px;
+margin:auto;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+h1{
+text-align:center;
+margin-bottom:30px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-bottom:20px;
+}
+
+td{
+border:1px solid #ddd;
+padding:15px;
+font-size:20px;
+}
+
+.btn{
+width:100%;
+padding:15px;
+border:none;
+border-radius:10px;
+font-size:20px;
+font-weight:bold;
+cursor:pointer;
+margin-top:10px;
+}
+
+.hijau{
+background:green;
+color:white;
+}
+
+.abu{
+background:#666;
+color:white;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+
+<h1>PEMBAYARAN IURAN</h1>
+
+<table>
+
+<tr>
+<td><b>Nama</b></td>
+<td>meldra</td>
+</tr>
+
+<tr>
+<td><b>Nomor Rumah</b></td>
+<td>A6</td>
+</tr>
+
+<tr>
+<td><b>Bulan</b></td>
+<td id="bulan"></td>
+</tr>
+
+<tr>
+<td><b>Nominal</b></td>
+<td>Rp 50.000</td>
+</tr>
+
+</table>
+
+<button onclick="bayarSekarang()" class="btn hijau">
+Bayar Sekarang
+</button>
+
+<button onclick="kembali()" class="btn abu">
+Kembali
+</button>
+
+</div>
+
+<script>
+
+const params = new URLSearchParams(window.location.search);
+
+const bulan = params.get("bulan");
+
+document.getElementById("bulan").innerText = bulan;
+
+function bayarSekarang(){
+
+alert("Pembayaran bulan " + bulan + " berhasil!");
+
+window.location.href="index.html";
+
+}
+
+function kembali(){
+
+window.history.back();
+
+}
+
+</script>
+
+</body>
+</html>
