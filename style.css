@@ -182,3 +182,15 @@ flex-direction:column;
 }
 
 }
+
+.profile-card{
+height:170px;
+}
+
+.status-box{
+min-height:120px;
+}
+
+.status-box h1{
+font-size:18px;
+}
