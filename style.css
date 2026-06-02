@@ -146,3 +146,26 @@ flex-direction:column;
 }
 
 }
+h2,h3{
+color:#1f2d3d;
+}
+
+.sidebar{
+box-shadow:4px 0 10px rgba(0,0,0,0.2);
+}
+
+.card-box{
+transition:0.3s;
+}
+
+.card-box:hover{
+transform:translateY(-3px);
+}
+
+.status-box{
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+table{
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
